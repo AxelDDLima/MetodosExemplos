@@ -13,7 +13,7 @@ public final class Statico extends Abstrata{
     */
 
     public double getSaldo() {
-        return saldo;
+        return this.saldo;
     }
 
     public static int soma1Mais1(){
@@ -22,5 +22,10 @@ public final class Statico extends Abstrata{
 
     private static int soma2Mais1(){
         return 2 + 1;
+    }
+
+    @Override
+    public int metodoAbstract(int i) {
+        return i;
     }
 }

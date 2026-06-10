@@ -41,6 +41,7 @@ public class Main {
         essa linha gera erro.
         */
         Abstrata abstrataStatic = new Statico();
+        Statico statico = new Statico();
         /* seald
         é um modificador que permite controlar quem pode herdar de uma classe ou implementar uma interface.
         a classe que herdar de uma classe sealed tem que conter um dos 3 modificadores, sealed, final(ninguém mais herda), non-sealed.
@@ -56,8 +57,14 @@ public class Main {
         //public, protected e private
         abstrataStatic.testeProtect = "Esta no mesmo pacote da classe, por isso eu tenho acesso!!";
         abstrataStatic.testePublic = "É publico, posso acessar de qual quer lugar que tenho instancia da minha classe";
-        // abstrataStatic.testePrivate = "Não pode ser acessado fora da classe!";
-        //essa linha gera erro por se tratar de uma variavel privada.
+
+        statico.testeProtect = "Esta no mesmo pacote da classe, por isso eu tenho acesso!!";
+        statico.testePublic = "É publico, posso acessar de qual quer lugar que tenho instancia da minha classe";
+        statico.getSaldo();
+
+        /* ===== abstrataStatic.testePrivate = "Não pode ser acessado fora da classe!"; ===== */
+        System.out.println(statico.metodoAbstract(1));
+        /* essa linha gera erro por se tratar de uma variavel privada. */
 
         //metodo abstrato dentro do metodo pai para forçar todos os outros a implemetarem aquele metodo
 
