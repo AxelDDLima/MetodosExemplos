@@ -54,6 +54,10 @@ public class Main {
         //Record
 
         //public, protected e private
+        abstrataStatic.testeProtect = "Esta no mesmo pacote da classe, por isso eu tenho acesso!!";
+        abstrataStatic.testePublic = "É publico, posso acessar de qual quer lugar que tenho instancia da minha classe";
+        // abstrataStatic.testePrivate = "Não pode ser acessado fora da classe!";
+        //essa linha gera erro por se tratar de uma variavel privada.
 
         //metodo abstrato dentro do metodo pai para forçar todos os outros a implemetarem aquele metodo
 
