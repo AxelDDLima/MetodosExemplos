@@ -50,7 +50,10 @@ public class Main {
         non-sealed = volta a abrir para todos.
         */
 
-        //instaceof
+        /*instanceof
+        serve para mostrar se uma classe herda de outra classe.
+        */
+        System.out.println(statico instanceof Abstrata);
 
         //Record
 

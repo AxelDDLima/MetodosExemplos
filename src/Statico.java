@@ -28,4 +28,12 @@ public final class Statico extends Abstrata{
     public int metodoAbstract(int i) {
         return i;
     }
+
+    /*
+    public abstract void metodoAbstratoooo(){
+
+     Apenas classes abstratas podem conter metodos abstratos.
+
+    }
+     */
 }
