@@ -33,15 +33,27 @@ public class Main {
         */
         //System.out.println(Statico.soma2Mais1());
 
-        //Extends
+        /* Extends
+        classes abstratas não podem se instanciadas!!!!
 
-        //seald , no-seald
+        Abstrata abstrata = new Abstrata();
+
+        essa linha gera erro.
+        */
+        Abstrata abstrataStatic = new Statico();
+        /* seald
+        é um modificador que permite controlar quem pode herdar de uma classe ou implementar uma interface.
+        a classe que herdar de uma classe sealed tem que conter um dos 3 modificadores, sealed, final(ninguém mais herda), non-sealed.
+        final = fecha totalmente.
+        sealed = abre só para convidados.
+        non-sealed = volta a abrir para todos.
+        */
 
         //instaceof
 
         //Record
 
-        //public, protect e private
+        //public, protected e private
 
         //metodo abstrato dentro do metodo pai para forçar todos os outros a implemetarem aquele metodo
 

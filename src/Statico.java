@@ -1,9 +1,5 @@
-public class Statico {
+public final class Statico extends Abstrata{
     private final double saldo = 1;
-
-    public double getSaldo() {
-        return saldo;
-    }
 
     /*
     Final
@@ -15,6 +11,10 @@ public class Statico {
         return this.saldo = saldo;
     }
     */
+
+    public double getSaldo() {
+        return saldo;
+    }
 
     public static int soma1Mais1(){
         return 1 + 1;
