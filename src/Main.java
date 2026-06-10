@@ -32,5 +32,21 @@ public class Main {
         * Nessa linha abaixo é retornado um erro, pois metodos/váriaveis "private" só podem ser acessados pela mesma classe.
         */
         //System.out.println(Statico.soma2Mais1());
+
+        //Extends
+
+        //seald , no-seald
+
+        //instaceof
+
+        //Record
+
+        //public, protect e private
+
+        //metodo abstrato dentro do metodo pai para forçar todos os outros a implemetarem aquele metodo
+
+        //sobreescrita
+
+        //sobrecarga de metodo
     }
 }
