@@ -1,4 +1,4 @@
-public final class Statico extends Abstrata{
+public final class Statico extends Abstrata implements PlayTeste, VideoTeste{
     private final double saldo = 1;
 
     /*
@@ -24,6 +24,9 @@ public final class Statico extends Abstrata{
         return 2 + 1;
     }
 
+    /**
+     * a classe pode implementa mais do que uma interface por vez, assim ela tem que trazer todos os metodos existentes das interfaces.
+     * */
     @Override
     public int metodoAbstract(int i) {
         return i;

@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         //metodo de acesso
 
-        /*
+        /**
         O Java precisa iniciar o programa sem criar nenhum objeto.
         Por isso o main é static.
         O Java executa diretamente:
@@ -15,7 +15,7 @@ public class Main {
 
         System.out.println(Statico.soma1Mais1());
 
-        /*
+        /**
         "final" significa:
         "Não pode ser alterado."
         Dependendo do contexto, o significado muda um pouco.
@@ -25,7 +25,7 @@ public class Main {
         Statico teste = new Statico();
         System.out.println(teste.getSaldo());
 
-        /*
+        /**
         * public e private.
         * quando algo de "public" ele pode ser acessado de qualquer lugar, sem restrinções, como acontece no
         * soma1mais1().
@@ -33,7 +33,7 @@ public class Main {
         */
         //System.out.println(Statico.soma2Mais1());
 
-        /* Extends
+        /** Extends
         classes abstratas não podem se instanciadas!!!!
 
         Abstrata abstrata = new Abstrata();
@@ -42,7 +42,7 @@ public class Main {
         */
         Abstrata abstrataStatic = new Statico();
         Statico statico = new Statico();
-        /* seald
+        /** seald
         é um modificador que permite controlar quem pode herdar de uma classe ou implementar uma interface.
         a classe que herdar de uma classe sealed tem que conter um dos 3 modificadores, sealed, final(ninguém mais herda), non-sealed.
         final = fecha totalmente.
@@ -50,7 +50,7 @@ public class Main {
         non-sealed = volta a abrir para todos.
         */
 
-        /*instanceof
+        /**instanceof
         serve para mostrar se uma classe herda de outra classe.
         */
         System.out.println(statico instanceof Abstrata);
@@ -65,14 +65,25 @@ public class Main {
         statico.testePublic = "É publico, posso acessar de qual quer lugar que tenho instancia da minha classe";
         statico.getSaldo();
 
-        /* ===== abstrataStatic.testePrivate = "Não pode ser acessado fora da classe!"; ===== */
+        /** ===== abstrataStatic.testePrivate = "Não pode ser acessado fora da classe!"; ===== */
         System.out.println(statico.metodoAbstract(1));
-        /* essa linha gera erro por se tratar de uma variavel privada. */
+        /** essa linha gera erro por se tratar de uma variavel privada. */
 
-        //metodo abstrato dentro do metodo pai para forçar todos os outros a implemetarem aquele metodo
+        /**metodo abstrato dentro do metodo pai para forçar todos os outros a implemetarem aquele metodo */
 
-        //sobreescrita
+        /**sobreescrita */
 
-        //sobrecarga de metodo
+        /**sobrecarga de metodo */
+
+        /**
+         *
+         */
+        var interfaceT = new VideoTeste() {
+            public void metodoInterface() {
+
+            }
+        };
+        System.out.println(interfaceT.getClass().getSimpleName());
+        System.out.println(interfaceT.metodoInterface(1));
     }
 }
