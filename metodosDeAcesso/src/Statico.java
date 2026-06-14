@@ -39,4 +39,5 @@ public final class Statico extends Abstrata implements PlayTeste, VideoTeste{
 
     }
      */
+
 }

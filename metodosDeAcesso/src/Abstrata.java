@@ -6,6 +6,7 @@ public abstract sealed class Abstrata permits Statico{
     private String testePrivate;
     protected String testeProtect;
 
+
     public void metodoNormal(){
     }
 
